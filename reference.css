@@ -1,0 +1,124 @@
+/* General & Global classes */
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+section{
+  position: relative;
+}
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.reference-link{
+  positon: relative;
+}
+
+.reference-link> img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: brightness(35%);
+}
+
+p{
+  position: relative;
+  font-family: Poppins;
+  font-size: 20px;
+  color: #dedede;
+  text-align: left;
+}
+
+div{
+  margin-bottom: 30px; 
+}
+
+.refblock2Image{
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  filter: brightness(25%);
+}
+
+/* Citation block */
+.referenceLink{
+  position: relative;
+  display: flex;
+  height: 60vh;
+}
+
+.link-text{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  padding: 10vh 5vw;
+}
+
+.link-text> h1{
+  color: #dedede;
+  font-size: 45px;
+}
+
+.link-text> p{
+  position: relative;
+}
+
+.div-line{
+  position: relative;
+  background-color: white;
+  width: 90%;
+  height: 2px;
+}
+
+.start{
+  margin: 5vh 0;
+}
+
+/* Footer */
+.footer{
+  position: relative;
+  display: flex;
+  padding: 0 8vw;
+  height: 25vh;
+}
+
+.footer-container > p{
+  font-size: 40px;
+  color: #dedede;
+}
+
+.reference{
+  position: relative;
+  display: flex;
+  height: 65vh;
+}
+
+.ref-text{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0vh 5vw;
+  right: 35px;
+}
+
+.ref-text> h1{
+  color: #dedede;
+  font-size: 45px;
+  margin-top: 10vh;
+}
+
+.ref-text> p{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 2vh;
+}

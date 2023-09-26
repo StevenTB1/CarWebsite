@@ -1,0 +1,686 @@
+/* General & Global classes */
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 27px;
+}
+
+/* Head */
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  margin-bottom: -5px;
+  filter: brightness(35%);
+}
+
+.title {
+  position: absolute;
+  top: 489px;
+  left: 100px;
+  font-size: 100px;
+  color: #dedede;
+  z-index: 1;
+}
+
+.subTitle {
+  position: absolute;
+  top: 691px;
+  left: 105px;
+  font-weight: 100;
+  font-size: 28px;
+  color: #dedede;
+  z-index: 2;
+}
+
+/*Info1************************/
+.info1Img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info1background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#info1 {
+  transform: rotate(270deg);
+  position: absolute;
+  background: black;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 100%;
+  padding-right: 20%;
+  height: 80%;
+  width: 500px;
+  opacity: 0.9;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+  transition: 1s;
+}
+
+.info1Text {
+  position: absolute;
+  padding-right: 20%;
+  left: 20px;
+  height: 80%;
+  width: 400px;
+  opacity: 0;
+  transition: 2s;
+  line-height: 1.6;
+}
+
+.info1Title {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+
+.info1Des {
+  position: absolute;
+  top: 70px;
+  font-size: 27px;
+  color: white;
+  word-wrap: break-word;
+}
+
+#info1Sub {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  bottom: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  transform-style: preserve-3D;
+  transition: 2s;
+}
+
+#info1Year {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  font-size: 30px;
+  color: white;
+  transition: 2s;
+  opacity: 0;
+}
+
+/*info2*************************************************/
+.info2background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#info2 {
+  bottom: 0;
+  transform: rotate(90deg);
+  position: absolute;
+  background: black;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  padding-right: 20%;
+  height: 85%;
+  width: 500px;
+  opacity: 0.9;
+  transform-origin: bottom left;
+  transform-style: preserve-3D;
+  transition: 1.5s;
+}
+
+.info2Text {
+  bottom: 0;
+  position: absolute;
+  padding-right: 20%;
+  left: 20px;
+  height: 80%;
+  width: 400px;
+  transition: 2s;
+  opacity: 0;
+  word-wrap: break-word;
+}
+
+.info2Title {
+  position: absolute;
+  font-size: 37px;
+  color: white;
+}
+.info2Des {
+  line-height: 1.9;
+  position: absolute;
+  top: 70px;
+  font-size: 20px;
+  color: white;
+  word-wrap: break-word;
+}
+
+#info2Sub {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 0%;
+  top: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  transform: rotate(90deg);
+  transform-origin: top right;
+  transform-style: preserve-3D;
+  transition: 2s;
+}
+
+#info2Year {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  font-size: 30px;
+  color: white;
+  transition: 2s;
+  opacity: 0;
+}
+
+
+/*info3*********************************************/
+.info3background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#info3 {
+  transform: rotate(270deg);
+  position: absolute;
+  background: black;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 100%;
+  padding-right: 20%;
+  height: 80%;
+  width: 500px;
+  opacity: 0.9;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+  transition: 1s;
+}
+
+.info3Text {
+  position: absolute;
+  padding-right: 20%;
+  left: 20px;
+  height: 80%;
+  width: 400px;
+  opacity: 0;
+  transition: 2s;
+  line-height: 1.6;
+
+}
+
+.info3Title {
+  position: absolute;
+  font-size: 37px;
+  color: white;
+}
+
+.info3Des {
+  position: absolute;
+  top: 70px;
+  font-size: 27px;
+  color: white;
+  word-wrap: break-word;
+}
+#info3Sub {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  bottom: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  transform-style: preserve-3D;
+  transition: 2s;
+}
+
+#info3Year {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  font-size: 30px;
+  color: white;
+  transition: 2s;
+  opacity: 0;
+}
+/*info4*************************************************/
+
+
+.info4background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#info4 {
+  bottom: 0;
+  transform: rotate(90deg);
+  position: absolute;
+  background: black;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  padding-right: 20%;
+  height: 80%;
+  width: 500px;
+  opacity: 0.9;
+  transform-origin: bottom left;
+  transform-style: preserve-3D;
+  transition: 1.5s;
+}
+
+.info4Text {
+  bottom: 0;
+  position: absolute;
+  padding-right: 20%;
+  left: 20px;
+  height: 70%;
+  width: 400px;
+  transition: 2s;
+  opacity: 0;
+  word-wrap: break-word;
+}
+
+.info4Title {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+}
+.info4Des {
+  line-height: 1.8;
+  position: absolute;
+  top: 70px;
+  font-size: 25px;
+  color: white;
+  word-wrap: break-word;
+}
+
+#info4Sub {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 0%;
+  top: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  transform: rotate(90deg);
+  transform-origin: top right;
+  transform-style: preserve-3D;
+  transition: 2s;
+}
+
+#info4Year {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  font-size: 30px;
+  color: white;
+  transition: 2s;
+  opacity: 0;
+}
+/*info5*****************/
+.info5background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#info5 {
+  transform: rotate(270deg);
+  position: absolute;
+  background: black;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 100%;
+  padding-right: 20%;
+  height: 80%;
+  width: 500px;
+  opacity: 0.9;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+  transition: 1s;
+}
+
+.info5Text {
+  position: absolute;
+  padding-right: 20%;
+  left: 20px;
+  height: 80%;
+  width: 400px;
+  opacity: 0;
+  transition: 2s;
+  line-height: 1.6;
+
+}
+
+.info5Title {
+  position: absolute;
+  font-size: 37px;
+  color: white;
+}
+
+.info5Des {
+  line-height: 1.6;
+  position: absolute;
+  top: 70px;
+  font-size: 23px;
+  color: white;
+  word-wrap: break-word;
+}
+
+#info5Sub {
+ border-top-left-radius: 100%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  bottom: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  transform-style: preserve-3D;
+  transition: 2s;
+}
+
+#info5Year {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  font-size: 30px;
+  color: white;
+  transition: 2s;
+  opacity: 0;
+}
+
+/*info6******************************/
+.info6background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#info6 {
+  bottom: 0;
+  transform: rotate(90deg);
+  position: absolute;
+  background: black;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  padding-right: 20%;
+  height: 80%;
+  width: 500px;
+  opacity: 0.9;
+  transform-origin: bottom left;
+  transform-style: preserve-3D;
+  transition: 1.5s;
+}
+
+.info6Text {
+  bottom: 0;
+  position: absolute;
+  padding-right: 20%;
+  left: 20px;
+  height: 70%;
+  width: 400px;
+  transition: 2s;
+  opacity: 0;
+  word-wrap: break-word;
+}
+
+.info6Title {
+  position: absolute;
+  font-size: 35px;
+  color: white;
+}
+.info6Des {
+  line-height: 1.8;
+  position: absolute;
+  top: 70px;
+  font-size: 24px;
+  color: white;
+  word-wrap: break-word;
+}
+
+#info6Sub {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 0%;
+  top: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  transform: rotate(90deg);
+  transform-origin: top right;
+  transform-style: preserve-3D;
+  transition: 2s;
+}
+
+#info6Year {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  font-size: 30px;
+  color: white;
+  transition: 2s;
+  opacity: 0;
+}
+
+/*info7*****************/
+.info7background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#info7 {
+  transform: rotate(270deg);
+  position: absolute;
+  background: black;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 100%;
+  padding-right: 20%;
+  height: 80%;
+  width: 500px;
+  opacity: 0.9;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+  transition: 1s;
+}
+
+.info7Text {
+  position: absolute;
+  padding-right: 20%;
+  left: 20px;
+  height: 80%;
+  width: 400px;
+  opacity: 0;
+  transition: 2s;
+  line-height: 1.6;
+
+}
+
+.info7Title {
+  position: absolute;
+  font-size: 37px;
+  color: white;
+}
+
+.info7Des {
+  line-height: 1.8;
+  position: absolute;
+  top: 70px;
+  font-size: 23px;
+  color: white;
+  word-wrap: break-word;
+}
+
+#info7Sub {
+ border-top-left-radius: 100%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  bottom: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  transform-style: preserve-3D;
+  transition: 2s;
+}
+
+#info7Year {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  font-size: 30px;
+  color: white;
+  transition: 2s;
+  opacity: 0;
+}
+/*info8*************************************************/
+
+
+.info8background {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#info8 {
+  bottom: 0;
+  transform: rotate(90deg);
+  position: absolute;
+  background: black;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  padding-right: 20%;
+  height: 80%;
+  width: 500px;
+  opacity: 0.9;
+  transform-origin: bottom left;
+  transform-style: preserve-3D;
+  transition: 1.5s;
+}
+
+.info8Text {
+  bottom: 0;
+  position: absolute;
+  padding-right: 20%;
+  left: 20px;
+  height: 70%;
+  width: 400px;
+  transition: 2s;
+  opacity: 0;
+  word-wrap: break-word;
+}
+
+.info8Title {
+  position: absolute;
+  font-size: 37px;
+  color: white;
+}
+.info8Des {
+  line-height: 2.0;
+  position: absolute;
+  top: 121px;
+  font-size: 23px;
+  color: white;
+  word-wrap: break-word;
+}
+
+#info8Sub {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 0%;
+  top: 0;
+  right: 0;
+  height: 250px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.9;
+  transform: rotate(90deg);
+  transform-origin: top right;
+  transform-style: preserve-3D;
+  transition: 2s;
+}
+
+#info8Year {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  font-size: 30px;
+  color: white;
+  transition: 2s;
+  opacity: 0;
+}
+
+/* Footer */
+.footer{
+  background-color: #070038;
+  padding: 10vh 10vh;
+  height: 10%;
+}
+
+.footer-container > p{
+  font-size: 30px;
+  color: #dedede;
+}

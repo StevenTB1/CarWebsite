@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="sidebar.css" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source Sans Pro'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+  <script src="https://kit.fontawesome.com/3ed9e4f726.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- side bar -->
+  <div id='sidebar' class='sidebar'>
+    <div class='sidebar-background'></div>
+    <div class='sidebar-buttons'>
+      <a class='sidebar-text' href='./index.html'>HOME</a>
+      <a class='sidebar-text' href='./about.html'>ABOUT</a>
+      <a class='sidebar-text' href='./target.html'>AUDIENCE</a>
+      <a class='sidebar-text' href='./example.html'>BIG PLAYERS</a>
+      <a class='sidebar-text' href='./compare.html'>COMPARISON</a>
+      <a class='sidebar-text' href='./history.html'>HISTORY</a>
+      <a class='sidebar-text' href='./reference.html'>REFERENCES</a>
+      <a class='sidebar-text' href='./tech.html'>TECHNIQUES</a>
+    </div>
+  </div>
+
+  <div class="menu-btn">
+    <div class='menu-btn_burger'></div>
+  </div>
+
+  <div class="wrapper">
+    <!--   Landing Section   -->
+    <section class='landingBlock1'>
+      <div class="landing-block-wrapper">
+        <div class='landing-block-overlay'></div>
+        <video autoplay muted loop class="landing-vid1">
+          <source src="./videos/compscilowres2.mp4" type="video/mp4">
+        </video>
+        <h1 class='landing-title1'>SELF-DRIVING CARS</h1>
+        <h2 class='landing-subtitle1'>The future of automobiles</h2>
+      </div>
+    </section>
+
+    <!--<img class = "home-background" src="./images-index/background.jpeg"></img> -->
+
+    <!--   Basic Information Sections -->
+    <section class='introduction-block1'>
+      <div class='container intro-block1-container'>
+        <div class="left intro-block1-left">
+          <div class="intro-block1-text-container-left">
+            <h1 class="intro-block1-title hiddenFadeLeft"> What is a Driveless Car? </h1>
+            <p class="intro-block1-text1 hiddenFadeLeft"> A self-driving car is a type of vehicle that can navigate and
+              drive itself without human input. </p>
+            <p class="intro-block1-text2 hiddenFadeLeft">
+              It uses sensors and other technology to detect and understand its surroundings, allowing it to move safely
+              and efficiently without the need for a human driver. They can be used for
+              transportation, delivery, or other applications.</p>
+            <a href='./about.html'>
+              <button class='learn-more-btn1 hiddenFadeLeft'><b>Learn More</b></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="right intro-block1-right">
+          <div class="intro-block1-img">
+            <img class='img intro-block1-right-img' src='./images-index/zoox2.jpg'></img>
+            <div class='captions'> Mercedes minimal silhouette </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class='introduction-block2'>
+      <div class='container intro-block2-container'>
+
+        <div class="right intro-block2-left">
+          <div class="intro-block2-img">
+            <img class='img intro-block2-right-img' src='./images-index/block2r.jpg'></img>
+            <div class='captions'> Sketch of the Driverless Car of the Future </div>
+          </div>
+        </div>
+
+        <div class="left intro-block2-right">
+          <h1 class="title intro-block2-title hiddenFadeRight">What is the history behind it?</h1>
+          <p class="intro-block2-line1 hiddenFadeRight"> The dream of a self-driving automobile goes as far back as the
+            middle ages, centuries prior to the
+            invention of the car. </p>
+          <p class="intro-block2-line2 hiddenFadeRight">Discover how this dream became a reality.</p>
+          <a href='./history.html'>
+            <button class='learn-more-btn2 hiddenFadeRight'><b>Learn More</b></button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class='introduction-block3'>
+      <div class='container intro-block3-container'>
+        <i class='fas fa-chevron-circle-right arrow-icon'></i>
+        <div class='intro-block3-background'></div>
+        <div class="intro-block3-title-container">
+          <h1 class="intro-block3-title-the">The</h1>
+          <h1 class="intro-block3-title-big">BIG</h1>
+          <h1 class="intro-block3-title-players">Players</h1>
+        </div>
+
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+          <div onclick="location.href='example.html';" class="imageBlock">
+            <p> Tesla </p>
+            <img class="image" src="./images-index/tesla.jpg" draggable="false" />
+          </div>
+
+          <div onclick="location.href='example.html';" class="imageBlock">
+            <p> Waymo </p>
+            <img class="image" src="./images-index/waymo.jpg" draggable="false" />
+          </div>
+
+          <div onclick="location.href='example.html';" class="imageBlock">
+            <p> Xpeng </p>
+            <img class="image" src="./images-index/xpeng.jpg" draggable="false" />
+          </div>
+
+          <div onclick="location.href='example.html';" class="imageBlock">
+            <p> Zoox </p>
+            <img class="image" src="./images-index/zoox.jpg" draggable="false" />
+          </div>
+
+          <div onclick="location.href='example.html';" class="imageBlock">
+            <p> Nio </p>
+            <img class="image" src="./images-index/nio.jpg" draggable="false" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="introduction-block4">
+      <div class="container intro-block4-container">
+        <h1 class="title intro-block4-title"> Video </h1>
+        <iframe src="https://www.youtube.com/embed/YRNaFOba_T0"></iframe>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container footer-container">
+        <p> © Copyright | Driverless Cars Assignment 2022 - 2023 </p>
+        <p style='font-size: 25px'> Developed by Justin Liu, Alex Zhao, Enshuo Zhang, Frank Xie, Steven Chow, Kyle Xu
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+
+</html>

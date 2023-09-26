@@ -1,0 +1,318 @@
+/* General & Global classes */
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+/* animmations */
+.hiddenFadeLeft {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 0.7s;
+}
+
+.show{
+  opacity: 1;
+  filter:blur(0);
+  transform: translateX(0);
+}
+
+.hiddenFadeRight {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 0.7s;
+}
+
+h1, p{
+  color: #dedede;
+}
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.techcaptions{
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.techImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-div:hover div{
+  font-size: 15px;
+  display: inline-block;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+/* Landing */
+.point1{
+  position: relative;
+  display: flex;
+  height: 60vh;
+  background-color: white;
+}
+
+.point1-text{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding-left: 5vw;
+}
+
+.point1-text> h1{
+  color: #dedede;
+  font-size: 55px;
+  margin-top: 15vh;
+  color: black;
+}
+
+.point1-text> p{
+  position: absolute;
+  color: #dedede;
+  font-size: 20px;
+  margin-top: 2vh;
+  color: black;
+}
+
+.morepoint1{
+  position: relative;
+  display: flex;
+  height: 46vh;
+  top: 0;
+  background-color: white;
+}
+
+.morepoint1-text{
+  position: relative;
+  width: 50%;
+  color: #000000;
+  height: 100%;
+  padding: 0vh 5vw;
+   left: 750px;
+}
+
+.morepoint1-text> h1{
+  color: #dedede;
+  font-size: 45px;
+  margin-top: 15vh;
+}
+
+.morepoint1-text> p{
+  position: absolute;
+  color: #000000;
+  font-size: 20px;
+  margin-top: 2vh;
+  top: 78px;
+}
+
+.landingBlock1{
+  height: 100vh;
+}
+
+.landingDiv{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.techlandingImage{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: brightness(40%);
+}
+
+.landingDiv> h1{
+  z-index: 1000;
+  position: absolute;
+  color: #dedede;
+  font-size: 80px;
+  top: 452px;
+  left: 185px;
+  white-space: nowrap;
+  margin: 0 auto;
+  overflow: hidden; 
+  border-right: .10em solid white;
+  letter-spacing: .025em; 
+  animation:
+    typing 3s steps(40, end),
+    blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.landingDiv> p{
+  z-index: 1000;
+  position: absolute;
+  color: #dedede;
+  font-size: 25px;
+  padding-left: 10vw;
+  padding-top: 52vh;
+}
+
+.block2Image{
+  position: absolute;
+  width: 100%;
+  height: 277%;
+  filter: brightness(25%);
+}
+
+/* point1 */
+.Ai-image-div:hover div{
+  font-size: 15px;
+  display: inline-block;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.div-line{
+  position: relative;
+  background-color: white;
+  margin: 5vh 5vw;
+  width: 90%;
+  height: 2px;
+}
+
+.Ai-image{
+  width: 50%;
+  height: 100%;
+  padding: 0vh 5vw;
+}
+
+.Ai-image-div{
+  position: relative;
+  width: 35vw;
+  height: 55vh;
+  top: 0vh;
+  left: 5vw;
+}
+
+/* point2 */
+
+.Ai2-image{
+  width: 50%;
+  height: 100%;
+  padding: 0vh 5vw;
+}
+
+.Ai2-image-div{
+  position: relative;
+  width: 35vw;
+  height: 40vh;
+  right: 1100px;
+  opacity: 0.7;
+}
+
+.point2-image-div{
+  position: relative;
+  width: 40vw;
+  height: 67vh;
+  top: 0;
+  left: 1vw;
+}
+
+.point2{
+  position: relative;
+  display: flex;
+  height: 65vh;
+  background-color: black;
+}
+
+.point2-text{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 0vh 5vw;
+  right: 35px;
+}
+
+.point2-text> h1{
+  font-size: 55px;
+  margin-top: 10vh;
+}
+
+.point2-text> p{
+  position: absolute;
+  font-size: 20px;
+  margin-top: 2vh;
+}
+
+/* point3 */
+.point3-image-div{
+  position: relative;
+  width: 35vw;
+  height: 65vh;
+}
+
+.point3{
+  position: relative;
+  display: flex;
+  height: 65vh;
+  background-color: white;
+}
+
+.point3-text{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 0vh 5vw;
+  left: 21px;
+}
+
+.point3-text> h1{
+  color: #dedede;
+  font-size: 55px;
+  margin-top: 10vh;
+  color: black;
+}
+
+.point3-text> p{
+  position: absolute;
+  color: #dedede;
+  font-size: 20px;
+  margin-top: 2vh;
+  color:black;
+}
+
+/* Footer */
+.footer{
+  position: relative;
+  display: flex;
+  padding: 0 8vw;
+  height: 25vh;
+}
+
+.footer-container > p{
+  font-size: 40px;
+  color: #dedede;
+}

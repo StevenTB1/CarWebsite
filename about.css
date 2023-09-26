@@ -1,0 +1,344 @@
+/* General & Global classes */
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.hiddenFadeLeft {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 0.7s;
+}
+
+.show{
+  opacity: 1;
+  filter:blur(0);
+  transform: translateX(0);
+}
+
+.hiddenFadeRight {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 0.7s;
+}
+
+h1, h2{
+  font-family: Open Sans;
+  color: #dedede;
+}
+
+h1{
+  font-size: 45px;
+}
+
+h2{
+  font-family: Open Sans;
+}
+
+p{
+  position: relative;
+  font-size: 20px;
+  color: #dedede;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.captions{
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.div-line{
+  position: relative;
+  background-color: white;
+  margin: 5vh 5vw;
+  width: 90%;
+  height: 2px;
+}
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+section{
+  width: 100%;
+  position: relative;
+}
+
+/* Landing */
+.landingBlock1{
+  height: 100vh;
+}
+
+.landingDiv{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.landingImage{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: brightness(35%);
+}
+
+.landingDiv> h1{
+  z-index: 1000;
+  position: absolute;
+  color: #dedede;
+  font-size: 80px;
+  padding-left: 10vw;
+  padding-top: 35vh;
+}
+
+.landingDiv > p{
+  z-index: 1000;
+  position: absolute;
+  color: #dedede;
+  font-size: 25px;
+  padding-left: 10vw;
+  padding-top: 52vh;
+}
+
+/* concept */
+.concept{
+  position: relative;
+  display: flex;
+  height: 60vh;
+  margin-bottom: 10vh;
+}
+
+.text{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 0vh 5vw;
+}
+
+.text> h1{
+  color: #dedede;
+  font-size: 45px;
+  margin-top: 15vh;
+}
+
+.text> p{
+  position: absolute;
+  color: #dedede;
+  font-size: 20px;
+  margin-top: 2vh;
+}
+
+.concept-image{
+  width: 50%;
+  height: 100%;
+  padding: 0vh 5vw;
+}
+
+.concept-image-div{
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  margin-top: 14vh;
+}
+
+.conceptImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.block2Image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(25%);
+}
+
+/* work */
+.work{
+  position: relative;
+  display: flex;
+  height: 65vh;
+  margin-bottom: 10vh;
+}
+
+.work-text{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 0vh 5vw;
+}
+
+.work-text> h1{
+  color: #dedede;
+  font-size: 45px;
+  margin-top: 10vh;
+}
+
+.work-text> p{
+  position: absolute;
+  color: #dedede;
+  font-size: 20px;
+  margin-top: 2vh;
+}
+
+.work-image{
+  width: 50%;
+  height: 100%;
+  padding: 0vh 1vw;
+}
+
+.work-image-div{
+  position: absolute;
+  width: 45vw;
+  height: 60vh;
+  margin-top: 2vh;
+  filter: brightness(50%);
+}
+
+/* levels */
+.level{
+  position: relative;
+  padding-bottom: 5vh;
+}
+
+.level> h1{
+  margin-top: 5vh;
+  margin-left: 5vw;
+  font-size: 45px;
+}
+
+.level-block{
+  width: 30%;
+  padding: 1vh 1vw;
+  position: relative;
+  outline: 2px solid white;
+}
+
+.level-block> h1{
+  font-size: 30px;
+}
+
+.level-0, .level-5{
+  margin-top: 5vh;
+  margin-left: 8vw;
+}
+
+.level-1, .level-4{
+  margin-top: 5vh;
+  margin-left: 30vw;
+}
+
+.level-2{
+  margin-top: 5vh;
+  margin-left: 55vw;
+}
+
+.level-3{
+  margin-top: 15vh;
+  margin-left: 55vw;
+}
+
+/* level images */
+.level-manual-image-div{
+  position: absolute;
+  left: 5vw;
+  top: 67vh;
+  width: 45vw;
+  height: 25vh;
+}
+
+.level-auto-image-div{
+  position: absolute;
+  left: 5vw;
+  top: 107vh;
+  width: 45vw;
+  height: 25vh;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-div:hover div{
+  font-size: 15px;
+  display: inline-block;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.image-div:hover{
+  cursor: pointer;
+}
+
+/* Benefit & Challenge Section */
+.benefit{
+  position: relative;
+  padding: 0vh 6vw;
+  margin: 10vh 0;
+  
+}
+
+.benefit>h1{
+  font-size: 45px;
+}
+
+.points{
+  padding-left: 3vw;
+}
+
+.benefit-image{
+  position: absolute;
+  left: 55vw;
+  top: 18.5vh;
+  width: 34vw;
+  height: 25vh;
+}
+
+.challenge{
+  position: relative;
+  padding: 0vh 6vw;
+  margin: 10vh 0;
+}
+
+.small-point{
+  margin: 8vh 3vw;
+}
+
+
+/* Footer */
+.footer{
+  padding: 0 8vw;
+  height: 25vh;
+}
+
+.footer-container > p{
+  font-size: 40px;
+  color: #dedede;
+}
